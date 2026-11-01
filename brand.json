@@ -1,0 +1,19 @@
+{
+  "name": "3dnoobs",
+  "package": "@3dnoobs/brand",
+  "primary": "#008509",
+  "secondary": null,
+  "neutral": "tinted",
+  "styles": {
+    "default": "flat",
+    "allowed": [
+      "flat",
+      "soft"
+    ]
+  },
+  "fonts": {
+    "sans": "Geist",
+    "display": "Montserrat Alternates"
+  },
+  "semi": "^0.7.0"
+}

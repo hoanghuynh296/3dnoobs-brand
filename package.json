@@ -1,0 +1,28 @@
+{
+  "name": "@3dnoobs/brand",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3dnoobs brand kit on the Semi Design System",
+  "type": "module",
+  "files": [
+    "dist",
+    "brand.json",
+    "BRAND.md",
+    "AGENTS.brand.md"
+  ],
+  "exports": {
+    "./dist/brand.css": "./dist/brand.css",
+    "./brand.json": "./dist/brand.json",
+    "./BRAND.md": "./BRAND.md",
+    "./AGENTS.brand.md": "./AGENTS.brand.md",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "semi-brand build",
+    "check": "semi-brand check",
+    "preview": "semi-brand preview"
+  },
+  "devDependencies": {
+    "@semi/ui": "github:hoanghuynh296/semi-nextjs-codebase#v0.7.0"
+  }
+}
