@@ -45,13 +45,13 @@ Nền, chữ và viền dùng token ngữ nghĩa (`bg-panel`, `text-muted`, `bor
 | Kiểm tra | Cặp | Tỉ lệ | |
 |---|---|---:|---|
 | nút chính (dark) | #0c0d0e / primary-400 | 6.10 | đạt |
-| chữ màu chính (dark) | primary-300 / nền dark | 5.94 | đạt |
-| chữ mờ Flat (dark) | text-muted / nền | 5.32 | đạt |
-| chữ mờ Soft (dark) | text-muted / nền | 5.53 | đạt |
+| chữ màu chính (dark) | primary-300 / nền dark | 5.93 | đạt |
+| chữ mờ Flat (dark) | text-muted / nền | 5.35 | đạt |
+| chữ mờ Soft (dark) | text-muted / nền | 5.57 | đạt |
 | nút chính (light) | #ffffff / primary-500 | 4.82 | đạt |
 | chữ màu chính (light) | primary-600 / nền light | 4.92 | đạt |
 | chữ mờ Flat (light) | text-muted / nền | 5.23 | đạt |
-| chữ mờ Soft (light) | text-muted / nền | 5.68 | đạt |
+| chữ mờ Soft (light) | text-muted / nền | 5.63 | đạt |
 
 ## Lưu ý
 
