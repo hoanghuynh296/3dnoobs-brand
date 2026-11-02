@@ -119,7 +119,9 @@ Icon: bộ icon của Semi (`<Icon name>`, nét 1.75), không trộn bộ icon k
 | Mục đang chọn (nền nhạt, viền) | `bg-accent-subtle`, `border-accent-line` | nhạt từ `#81b67d` | nhạt từ `#006f06` |
 
 Không dùng `primary-500/15`, `ring-primary-500/50` … cho trạng thái: thang `primary-*` không đổi theo theme nên có
-thể biến mất trên nền (`semi-lint`: `accent-state-token`).
+thể biến mất trên nền (`semi-lint`: `accent-state-token`). Không tô nền hay viền bằng thang (`bg-primary-500`,
+`border-primary-500`): màu thương hiệu nằm ở `primary-600`, nút chính là `bg-accent` + `text-on-accent`;
+thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `primary-fill`).
 
 ## Kiểm tra đọc rõ (chữ ≥ 4.5:1, viền và nút so với nền ≥ 3:1)
 
@@ -127,11 +129,11 @@ thể biến mất trên nền (`semi-lint`: `accent-state-token`).
 |---|---|---:|---:|---|
 | nút chính (tối) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
 | nút chính khi hover (tối) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
-| chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.49 | 4.5 | đạt |
-| viền focus (tối) | primary-400 / nền | 5.49 | 3 | đạt |
-| nút tách khỏi nền (tối) | primary-600 / nền | 3.47 | 3 | đạt |
-| chữ mờ Flat (tối) | text-muted / nền | 5.35 | 4.5 | đạt |
-| chữ mờ Soft (tối) | text-muted / nền | 5.57 | 4.5 | đạt |
+| chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.18 | 4.5 | đạt |
+| viền focus (tối) | primary-400 / nền | 5.31 | 3 | đạt |
+| nút tách khỏi nền (tối) | primary-600 / nền | 3.28 | 3 | đạt |
+| chữ mờ Flat (tối) | text-muted / nền | 5.52 | 4.5 | đạt |
+| chữ mờ Soft (tối) | text-muted / nền | 5.98 | 4.5 | đạt |
 | nút chính (sáng) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
 | nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
 | chữ màu chính (sáng) | primary-700 / nền + nền chọn | 4.73 | 4.5 | đạt |

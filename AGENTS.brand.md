@@ -7,7 +7,7 @@ This product belongs to the **3dnoobs** brand. Colours, fonts, logo, voice and a
 - Accent use: **Cân bằng**. Như tiết chế, thêm nền nhạt bg-accent-subtle cho khối nổi bật (banner, thẻ khuyến nghị), tối đa một khối mỗi màn hình.
 - Share of a screen, roughly: neutral 70%, surface 20%, accent 10%.
 - One primary button per area (`Button variant="primary"`); everything else secondary or ghost.
-- States: `ring-focus`, `border-focus`, `bg-accent-subtle`, `border-accent-line`; coloured text `text-accent-fg`. Never `primary-500/15`-style classes (`accent-state-token`).
+- States: `ring-focus`, `border-focus`, `bg-accent-subtle`, `border-accent-line`; coloured text `text-accent-fg`. Never `primary-500/15`-style classes (`accent-state-token`) or `bg-primary-500` fills (`primary-fill`): main actions are `bg-accent` + `text-on-accent`; `primary-*` is for charts and illustrations.
 - This brand has no secondary colour: do not add one.
 - Status (success, error, warning) keeps Semi's status tokens, never the brand colour.
 - Never define brand colours or override Semi tokens in this app (`--color-primary-*`, `--semi-*`, `@theme` colours, hex values): `semi-lint` blocks it (`brand-override`).
