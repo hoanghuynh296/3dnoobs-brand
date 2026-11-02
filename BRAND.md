@@ -9,49 +9,136 @@ không định nghĩa màu, font hay style riêng trong sản phẩm. Muốn đ�
 
 | | |
 |---|---|
-| Màu chính | `#008509` |
+| Màu chính | `#008509` (nằm ở `primary-600`) |
 | Màu phụ | không có |
 | Màu trung tính | phủ theo màu chính |
 | Style | Flat (mặc định), Soft |
 | Font | Geist (giao diện, nội dung) · Montserrat Alternates (tiêu đề, số KPI) |
+| Giọng văn | Thân thiện, gọi người dùng “bạn” |
+
+## Thương hiệu này cho ai
+
+> In 3D dễ hơn, cùng nhau.
+
+**Sản phẩm:** Hệ sinh thái in 3D: cửa hàng máy in 3D và vật liệu, cộng đồng in 3D, và các phần mềm phục vụ ngành in 3D  
+**Người dùng:** Mọi người quan tâm đến in 3D, từ người mới bắt đầu dùng điện thoại đến maker và kỹ sư làm việc trên máy tính  
+**Tính cách:** thân thiện, vui vẻ, sáng tạo
+
+## Logo
+
+| Bản | File trong package | Dùng khi |
+|---|---|---|
+| Đầy đủ | `@3dnoobs/brand/dist/logo/full.svg` | Header, trang đăng nhập, email (nền sáng) |
+| Đầy đủ, nền tối | `@3dnoobs/brand/dist/logo/fullDark.svg` | Theme tối |
+
+- Khoảng trống quanh logo ít nhất 0.5 × chiều cao logo; không đặt chữ, viền hay ảnh vào vùng đó
+- Rộng tối thiểu 80px cho bản đầy đủ
+- Không kéo méo, xoay, đổi màu, thêm bóng hay viền; không đặt lên ảnh rối
+- Theme tối dùng bản nền tối
+
+## Cách dùng màu
+
+**Mức dùng màu chính: Cân bằng.** Như tiết chế, thêm nền nhạt bg-accent-subtle cho khối nổi bật (banner, thẻ khuyến nghị), tối đa một khối mỗi màn hình.
+
+Tỉ lệ trên một màn hình (ước lượng): trung tính 70% · bề mặt 20% · màu chính 10%.
+
+- Màu chính là màu của hành động: nút chính (`bg-accent` + `text-on-accent`), link và chữ nhấn (`text-accent-fg`), mục đang chọn (`bg-accent-subtle`, `border-accent-line`), focus (`ring-focus`)
+- Thành công / lỗi / cảnh báo giữ màu trạng thái của Semi (`text-success-fg`, `bg-danger-bg` …), không dùng màu thương hiệu để báo trạng thái
+- Nền, chữ, viền: token ngữ nghĩa (`bg-panel`, `text-muted`, `border-line`), không mã màu
+
+## Giọng văn
+
+**Giọng: Thân thiện.** Gọi người dùng là “bạn”, thương hiệu tự xưng “3D Noobs”. Emoji: không.
+
+- Nói chuyện trực tiếp với người dùng, câu ngắn, ấm áp
+- Được dùng câu cảm ơn ngắn sau một việc lớn (đặt hàng, tạo xong)
+- Không đùa trong thông báo lỗi
+- Nút: động từ + đối tượng, tối đa 3 từ, viết hoa chữ đầu (Lưu, Tạo đơn hàng), không "OK" / "Xác nhận" chung chung
+- Lỗi: chuyện gì xảy ra + cách sửa, không đổ lỗi cho người dùng, không mã lỗi trần
+- Trạng thái trống: vì sao trống + một hành động để bắt đầu
+- Không viết "Đang tải…": dùng skeleton hoặc thanh tiến trình
+- Không phụ đề dưới tiêu đề trang; nhãn ngắn, icon đi trước chữ
+
+**Nên**
+
+- Nói như một người bạn đã in 3D lâu năm: giải thích thuật ngữ bằng lời thường khi người dùng có thể là người mới.
+- Khuyến khích thử nghiệm và chỉ rõ bước tiếp theo, kể cả khi có lỗi.
+
+**Không nên**
+
+- Không chê hay làm người dùng thấy mình "noob" khi họ hỏi hoặc làm sai.
+- Không đùa trong thông báo về tiền, đơn hàng hay lỗi làm mất dữ liệu.
+
+| Chỗ | Ví dụ |
+|---|---|
+| Nút | “Thêm vào giỏ” · “Bắt đầu in” · “Chia sẻ mẫu” |
+| Lỗi | “Chưa tải được file của bạn. Kiểm tra kết nối rồi thử lại nhé.” |
+| Trạng thái trống | “Bạn chưa có mẫu nào. Tải lên mẫu đầu tiên hoặc xem thư viện của cộng đồng để lấy cảm hứng.” |
+
+## Bố cục
+
+Mật độ và cỡ chữ không phải của thương hiệu: mỗi sản phẩm tự chọn (dashboard thường gọn, web bán hàng thường thoáng và chữ tương phản), khi tạo app bằng `/semi-new-app`.
+
+**Tránh giao diện chung chung** (thứ mọi sản phẩm làm bằng AI đều có):
+
+- Không phải màn nào cũng là sidebar + tiêu đề + bốn thẻ KPI bằng nhau + bảng: mỗi màn có một khối chính (việc người dùng đến để làm), lớn hơn phần còn lại
+- Icon trên thẻ KPI để trung tính hoặc bỏ; màu trên KPI phải có nghĩa (tốt / xấu), không mỗi thẻ một màu trang trí
+- Không làm hàng ba thẻ tính năng có icon, tiêu đề một chữ và lời hứa chung chung (“Nhanh”, “An toàn”, “Tận tâm”): đưa bằng chứng (ảnh sản phẩm, con số thật, lời khách hàng)
+- Không đặt icon trước mọi nhãn: icon chỉ ở chỗ giúp nhìn nhanh (điều hướng, hành động, trạng thái)
+- Chữ mẫu và trạng thái trống lấy từ sản phẩm và giọng văn của thương hiệu, không chữ chung chung
+- Đổi nhịp: không phải khối nào cũng là thẻ cùng padding; dùng cả vùng trơn, đường chia và khoảng trống
+
+## Hình ảnh và minh hoạ
+
+Ảnh chụp thật máy in, vật liệu và mô hình do cộng đồng in; ánh sáng tự nhiên, nền gọn.
+
+Icon: bộ icon của Semi (`<Icon name>`, nét 1.75), không trộn bộ icon khác.
 
 ## Màu chính (`primary-*`)
 
 | Sắc độ | Mã |
 |---|---|
-| 50 | `#e9f1e8` |
-| 100 | `#d7e8d6` |
-| 200 | `#b5d6b2` |
-| 300 | `#87bd83` |
-| 400 | `#53a150` |
-| 500 | `#008509` |
-| 600 | `#006f06` |
-| 700 | `#005a04` |
-| 800 | `#004602` |
-| 900 | `#003601` |
+| 50 | `#f5f7f5` |
+| 100 | `#e8efe7` |
+| 200 | `#cee1cd` |
+| 300 | `#abcea9` |
+| 400 | `#81b67d` |
+| 500 | `#539f50` |
+| 600 | `#008509` |
+| 700 | `#006f06` |
+| 800 | `#005503` |
+| 900 | `#003c02` |
 
-## Dùng màu trong sản phẩm
+## Token màu trong sản phẩm
 
 | Việc | Token | Tối | Sáng |
 |---|---|---|---|
-| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#53a150` / `#0c0d0e` | `#008509` / `#ffffff` |
-| Chữ, icon màu chính | `text-accent-fg` | `#87bd83` | `#006f06` |
+| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#008509` / `#ffffff` | `#008509` / `#ffffff` |
+| Chữ, icon màu chính | `text-accent-fg` | `#81b67d` | `#006f06` |
+| Viền focus, ô nhập đang gõ | `ring-focus`, `border-focus` | `#81b67d` | `#006f06` |
+| Mục đang chọn (nền nhạt, viền) | `bg-accent-subtle`, `border-accent-line` | nhạt từ `#81b67d` | nhạt từ `#006f06` |
 
-Nền, chữ và viền dùng token ngữ nghĩa (`bg-panel`, `text-muted`, `border-line` …); giá trị theo style, đã kiểm tra
-đọc rõ. Màu trạng thái (thành công, lỗi, cảnh báo) giữ của Semi.
+Không dùng `primary-500/15`, `ring-primary-500/50` … cho trạng thái: thang `primary-*` không đổi theo theme nên có
+thể biến mất trên nền (`semi-lint`: `accent-state-token`).
 
-## Kiểm tra đọc rõ (WCAG AA ≥ 4.5:1)
+## Kiểm tra đọc rõ (chữ ≥ 4.5:1, viền và nút so với nền ≥ 3:1)
 
-| Kiểm tra | Cặp | Tỉ lệ | |
-|---|---|---:|---|
-| nút chính (dark) | #0c0d0e / primary-400 | 6.10 | đạt |
-| chữ màu chính (dark) | primary-300 / nền dark | 5.93 | đạt |
-| chữ mờ Flat (dark) | text-muted / nền | 5.35 | đạt |
-| chữ mờ Soft (dark) | text-muted / nền | 5.57 | đạt |
-| nút chính (light) | #ffffff / primary-500 | 4.82 | đạt |
-| chữ màu chính (light) | primary-600 / nền light | 4.92 | đạt |
-| chữ mờ Flat (light) | text-muted / nền | 5.23 | đạt |
-| chữ mờ Soft (light) | text-muted / nền | 5.63 | đạt |
+| Kiểm tra | Cặp | Tỉ lệ | Cần | |
+|---|---|---:|---:|---|
+| nút chính (tối) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
+| nút chính khi hover (tối) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
+| chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.49 | 4.5 | đạt |
+| viền focus (tối) | primary-400 / nền | 5.49 | 3 | đạt |
+| nút tách khỏi nền (tối) | primary-600 / nền | 3.47 | 3 | đạt |
+| chữ mờ Flat (tối) | text-muted / nền | 5.35 | 4.5 | đạt |
+| chữ mờ Soft (tối) | text-muted / nền | 5.57 | 4.5 | đạt |
+| nút chính (sáng) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
+| nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
+| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 4.73 | 4.5 | đạt |
+| viền focus (sáng) | primary-700 / nền | 4.92 | 3 | đạt |
+| nút tách khỏi nền (sáng) | primary-600 / nền | 4.17 | 3 | đạt |
+| chữ mờ Flat (sáng) | text-muted / nền | 5.23 | 4.5 | đạt |
+| chữ mờ Soft (sáng) | text-muted / nền | 5.63 | 4.5 | đạt |
 
 ## Lưu ý
 
