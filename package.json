@@ -28,7 +28,7 @@
   "devDependencies": {
     "@semi/ui": "github:hoanghuynh296/semi-nextjs-codebase#v0.26.1",
     "@tailwindcss/postcss": "^4.1.0",
-    "next": "^16.0.0",
+    "next": "^16.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.1.0"

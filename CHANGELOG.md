@@ -8,3 +8,6 @@
 
 ### Checked
 - @semi/ui 0.21.0 to 0.26.1 changelog: no change to token names, the `brand.json` schema or `semi-brand build` output. No colour, font, logo or voice change.
+
+### Fixed
+- Dev dependency `next` is `^16.4.6` (was resolved at 16.4.3, flagged by GHSA-mfr8-8qww-v76h and GHSA-vc7v-qv4w-wrv8, range 16.2.0-16.4.4), so `semi-brand site` (the `brand-pages` build) runs again.
