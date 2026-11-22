@@ -113,7 +113,7 @@ Icon: bộ icon của Semi (`<Icon name>`, nét 1.75), không trộn bộ icon k
 
 | Việc | Token | Tối | Sáng |
 |---|---|---|---|
-| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#008509` / `#ffffff` | `#008509` / `#ffffff` |
+| Nút chính | `bg-accent` + `text-on-accent` (hoặc `Button variant="primary"`) | `#539f50` / `#0c0d0e` | `#008509` / `#ffffff` |
 | Chữ, icon màu chính | `text-accent-fg` | `#81b67d` | `#006f06` |
 | Viền focus, ô nhập đang gõ | `ring-focus`, `border-focus` | `#81b67d` | `#006f06` |
 | Mục đang chọn (nền nhạt, viền) | `bg-accent-subtle`, `border-accent-line` | nhạt từ `#81b67d` | nhạt từ `#006f06` |
@@ -123,25 +123,39 @@ thể biến mất trên nền (`semi-lint`: `accent-state-token`). Không tô n
 `border-primary-500`): màu thương hiệu nằm ở `primary-600`, nút chính là `bg-accent` + `text-on-accent`;
 thang `primary-*` chỉ cho biểu đồ và hình minh hoạ (`semi-lint`: `primary-fill`).
 
+Nút chính không phải đúng mã màu thương hiệu ở theme tối: đó là sắc độ gần nhất đọc rõ và tách khỏi nền (xem Lưu ý). Logo và hình ảnh vẫn dùng đúng mã.
+
 ## Kiểm tra đọc rõ (chữ ≥ 4.5:1, viền và nút so với nền ≥ 3:1)
 
 | Kiểm tra | Cặp | Tỉ lệ | Cần | |
 |---|---|---:|---:|---|
-| nút chính (tối) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
-| nút chính khi hover (tối) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
+| nút chính (tối) | chữ #0c0d0e / primary-500 | 5.97 | 4.5 | đạt |
+| nút chính khi hover (tối) | chữ #0c0d0e / primary-400 | 8.26 | 4.5 | đạt |
 | chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.18 | 4.5 | đạt |
 | viền focus (tối) | primary-400 / nền | 5.31 | 3 | đạt |
-| nút tách khỏi nền (tối) | primary-600 / nền | 3.28 | 3 | đạt |
+| nút tách khỏi nền (tối) | primary-500 / nền | 4.86 | 3 | đạt |
 | chữ mờ Flat (tối) | text-muted / nền | 5.52 | 4.5 | đạt |
+| viền ô nhập Flat (tối) | control-line / nền | 3.19 | 3 | đạt |
 | chữ mờ Soft (tối) | text-muted / nền | 5.98 | 4.5 | đạt |
+| viền ô nhập Soft (tối) | control-line / nền | 3.41 | 3 | đạt |
+| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.35 | 4.5 | đạt |
+| chữ trạng thái thành công (tối) | success-fg / nền | 5.57 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.63 | 4.5 | đạt |
+| chữ trạng thái thông tin (tối) | info-fg / nền | 6.73 | 4.5 | đạt |
 | nút chính (sáng) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
 | nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
 | chữ màu chính (sáng) | primary-700 / nền + nền chọn | 4.73 | 4.5 | đạt |
 | viền focus (sáng) | primary-700 / nền | 4.92 | 3 | đạt |
 | nút tách khỏi nền (sáng) | primary-600 / nền | 4.17 | 3 | đạt |
 | chữ mờ Flat (sáng) | text-muted / nền | 5.23 | 4.5 | đạt |
+| viền ô nhập Flat (sáng) | control-line / nền | 3.49 | 3 | đạt |
 | chữ mờ Soft (sáng) | text-muted / nền | 5.63 | 4.5 | đạt |
+| viền ô nhập Soft (sáng) | control-line / nền | 3.67 | 3 | đạt |
+| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.44 | 4.5 | đạt |
+| chữ trạng thái thành công (sáng) | success-fg / nền | 6.18 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.13 | 4.5 | đạt |
+| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.13 | 4.5 | đạt |
 
 ## Lưu ý
 
-- Màu chính gần màu thành công (xanh lá) của Semi: trạng thái luôn kèm icon hoặc chữ, đừng chỉ dựa vào màu
+- Màu thành công được xoay 20° (#28A25A → #00a081) để không lẫn với màu chính
