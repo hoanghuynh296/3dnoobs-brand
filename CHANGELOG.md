@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.3.0] - 2026-11-23
+
+### Changed
+- Rebuilt on Semi 0.36.0 (C-030/C-033 surfaces): dev dependency @semi/ui is `github:hoanghuynh296/semi-nextjs-codebase#v0.36.0` (was v0.35.0); `dist/` and BRAND.md rebuilt. No colour, font or logo change in `brand.json`; the new options (`neutral: "pure"`, `primaryStyle: "inverted"`) stay at their defaults.
+- Surface steps (canvas, app, panel, field, raised) follow Semi's small, even steps; `card` and `tint` are new. Readability table: 34/34 pairs pass AA.
+
 ## [3.2.0] - 2026-11-22
 
 ### Changed
