@@ -12,6 +12,7 @@ không định nghĩa màu, font hay style riêng trong sản phẩm. Muốn đ�
 | Màu chính | `#008509` (nằm ở `primary-600`) |
 | Màu phụ | không có |
 | Màu trung tính | phủ theo màu chính |
+| Nút chính | màu thương hiệu |
 | Style | Flat (mặc định), Soft |
 | Font | Geist (giao diện, nội dung) · Montserrat Alternates (tiêu đề, số KPI) |
 | Giọng văn | Thân thiện, gọi người dùng “bạn” |
@@ -131,30 +132,38 @@ Nút chính không phải đúng mã màu thương hiệu ở theme tối: đó 
 |---|---|---:|---:|---|
 | nút chính (tối) | chữ #0c0d0e / primary-500 | 5.97 | 4.5 | đạt |
 | nút chính khi hover (tối) | chữ #0c0d0e / primary-400 | 8.26 | 4.5 | đạt |
-| chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.18 | 4.5 | đạt |
-| viền focus (tối) | primary-400 / nền | 5.31 | 3 | đạt |
-| nút tách khỏi nền (tối) | primary-500 / nền | 4.86 | 3 | đạt |
-| chữ mờ Flat (tối) | text-muted / nền | 5.52 | 4.5 | đạt |
-| viền ô nhập Flat (tối) | control-line / nền | 3.19 | 3 | đạt |
-| chữ mờ Soft (tối) | text-muted / nền | 5.98 | 4.5 | đạt |
-| viền ô nhập Soft (tối) | control-line / nền | 3.41 | 3 | đạt |
-| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.35 | 4.5 | đạt |
-| chữ trạng thái thành công (tối) | success-fg / nền | 5.57 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 8.63 | 4.5 | đạt |
-| chữ trạng thái thông tin (tối) | info-fg / nền | 6.73 | 4.5 | đạt |
+| chữ màu chính (tối) | primary-400 / nền + nền chọn | 5.09 | 4.5 | đạt |
+| viền focus (tối) | primary-400 / nền | 5.73 | 3 | đạt |
+| nút tách khỏi nền (tối) | primary-500 / nền | 5.26 | 3 | đạt |
+| chữ mờ Flat (tối) | text-muted / nền | 6.04 | 4.5 | đạt |
+| viền ô nhập Flat (tối) | control-line / nền | 3.40 | 3 | đạt |
+| chữ mờ Soft (tối) | text-muted / nền | 6.47 | 4.5 | đạt |
+| viền ô nhập Soft (tối) | control-line / nền | 3.58 | 3 | đạt |
+| chữ mờ trên thẻ Flat (tối) | text-muted / card + card-field | 5.30 | 4.5 | đạt |
+| thẻ tách khỏi nền Flat (tối) | card / app | 1.16 | 1.1 | đạt |
+| chữ mờ trên thẻ Soft (tối) | text-muted / card + card-field | 5.66 | 4.5 | đạt |
+| thẻ tách khỏi nền Soft (tối) | card / app | 1.18 | 1.1 | đạt |
+| chữ trạng thái lỗi (tối) | danger-fg / nền | 5.81 | 4.5 | đạt |
+| chữ trạng thái thành công (tối) | success-fg / nền | 6.05 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (tối) | warning-fg / nền | 9.36 | 4.5 | đạt |
+| chữ trạng thái thông tin (tối) | info-fg / nền | 7.30 | 4.5 | đạt |
 | nút chính (sáng) | chữ #ffffff / primary-600 | 4.82 | 4.5 | đạt |
 | nút chính khi hover (sáng) | chữ #ffffff / primary-700 | 6.41 | 4.5 | đạt |
-| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 4.73 | 4.5 | đạt |
-| viền focus (sáng) | primary-700 / nền | 4.92 | 3 | đạt |
-| nút tách khỏi nền (sáng) | primary-600 / nền | 4.17 | 3 | đạt |
-| chữ mờ Flat (sáng) | text-muted / nền | 5.23 | 4.5 | đạt |
-| viền ô nhập Flat (sáng) | control-line / nền | 3.49 | 3 | đạt |
-| chữ mờ Soft (sáng) | text-muted / nền | 5.63 | 4.5 | đạt |
-| viền ô nhập Soft (sáng) | control-line / nền | 3.67 | 3 | đạt |
-| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.44 | 4.5 | đạt |
-| chữ trạng thái thành công (sáng) | success-fg / nền | 6.18 | 4.5 | đạt |
-| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.13 | 4.5 | đạt |
-| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.13 | 4.5 | đạt |
+| chữ màu chính (sáng) | primary-700 / nền + nền chọn | 4.60 | 4.5 | đạt |
+| viền focus (sáng) | primary-700 / nền | 5.15 | 3 | đạt |
+| nút tách khỏi nền (sáng) | primary-600 / nền | 4.32 | 3 | đạt |
+| chữ mờ Flat (sáng) | text-muted / nền | 5.14 | 4.5 | đạt |
+| viền ô nhập Flat (sáng) | control-line / nền | 3.44 | 3 | đạt |
+| chữ mờ Soft (sáng) | text-muted / nền | 5.78 | 4.5 | đạt |
+| viền ô nhập Soft (sáng) | control-line / nền | 3.76 | 3 | đạt |
+| chữ mờ trên thẻ Flat (sáng) | text-muted / card + card-field | 4.53 | 4.5 | đạt |
+| thẻ tách khỏi nền Flat (sáng) | card / app | 1.12 | 1.1 | đạt |
+| chữ mờ trên thẻ Soft (sáng) | text-muted / card + card-field | 5.23 | 4.5 | đạt |
+| thẻ tách khỏi nền Soft (sáng) | card / app | 1.12 | 1.1 | đạt |
+| chữ trạng thái lỗi (sáng) | danger-fg / nền | 5.59 | 4.5 | đạt |
+| chữ trạng thái thành công (sáng) | success-fg / nền | 6.35 | 4.5 | đạt |
+| chữ trạng thái cảnh báo (sáng) | warning-fg / nền | 6.30 | 4.5 | đạt |
+| chữ trạng thái thông tin (sáng) | info-fg / nền | 5.27 | 4.5 | đạt |
 
 ## Lưu ý
 
