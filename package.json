@@ -26,7 +26,7 @@
     "semi:lint": "semi-lint"
   },
   "devDependencies": {
-    "@semi/ui": "github:hoanghuynh296/semi-nextjs-codebase#53105bc",
+    "@semi/ui": "github:hoanghuynh296/semi-nextjs-codebase#v1.0.0",
     "@tailwindcss/postcss": "^4.1.0",
     "next": "^16.4.6",
     "react": "^19.0.0",
