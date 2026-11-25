@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.0.0] - 2026-11-25
+
+### Breaking (Từ Semi 1.0)
+- **Semi 1.0 brand schema**: rebuilt `@3dnoobs/brand` on `@semi/ui` 1.0 candidate (`github:hoanghuynh296/semi-nextjs-codebase#53105bc`; pin to `#v1.0.0` once tagged). `brand.json` `"semi"` range updated to `">=1.0.0 <2.0.0"` (was `">=0.35.0 <1.0.0"`).
+- Removed 0.x fields from `brand.json`: `neutral`, `styles`, and `color.accent`. Retained `primary` (`#008509`), `secondary` (`null`), `fonts` (`Geist` + `Montserrat Alternates`), `logo`, `voice`, `brief`, and `imagery`.
+- `dist/brand.css` now emits only 1.0 brand tokens (`--semi-primary`, `--semi-primary-hover`, `--semi-on-primary`, `--semi-secondary*`, `--semi-new-tag-text-dark/light`, `--font-sans-family`, `--font-display-family`). No tinted greys, no `accent-subtle`/`accent-line`, no style overrides, and no status colour overrides — surfaces, text tiers, selection, focus and status colours come from `@semi/ui` 1.0.
+- `BRAND.md` and `AGENTS.brand.md` updated to the Semi 1.0 brand colour rule: primary only for main buttons (page/dialog/nav), attention count badges, "Mới" (new) tags, and the active big-tab underline.
+- Contrast report: 4/4 checks pass (`#ffffff` on `#008509` 4.82:1, `#ffffff` on hover `#007106` 6.24:1, button vs dark surfaces 3.61:1, button vs light surfaces 4.04:1).
+
 ## [3.3.0] - 2026-11-23
 
 ### Changed
